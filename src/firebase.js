@@ -14,17 +14,6 @@ const firebaseConfig = {
   measurementId: process.env.REACT_APP_MEASUREMENT_ID,
 };
 
-/*const firebaseConfig = {
-    apiKey: "AIzaSyDtC6fo4EXMw1Sq6brkp-vzSeKE1DMpQxk",
-    authDomain: "emailauth-e6005.firebaseapp.com",
-    databaseURL: "https://emailauth-e6005-default-rtdb.firebaseio.com",
-    projectId: "emailauth-e6005",
-    storageBucket: "emailauth-e6005.appspot.com",
-    messagingSenderId: "868008307773",
-    appId: "1:868008307773:web:5b54f6825f33d517be4e54",
-    measurementId: "G-X6KMR7GL5Q"
-  };*/
-
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 const database = getDatabase(app);
